@@ -8,7 +8,7 @@ $white-smoke: whitesmoke;
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 $img-border-radius: 2.5vw;
 $other-section-color: #f4f7fa;
-$h1Size: clamp(1.5rem, 2.5vw, 2.5vw);
+$h1Size: clamp(1.5rem, 2vw, 2vw);
 
 html {
     height: 100%;
@@ -39,21 +39,24 @@ body {
     background-color: rgba(96, 178, 255, 0.562);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: .8vw;
 
 }
-::-webkit-scrollbar-thumb{
-    background: linear-gradient($primary-text , $dark-text);
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient($primary-text, $dark-text);
     border: .2vw solid white;
     border-radius: 1vw;
-    &:hover{
-    background: linear-gradient($dark-text , $primary-text);
+
+    &:hover {
+        background: linear-gradient($dark-text, $primary-text);
 
 
     }
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: none;
 }
 
@@ -188,7 +191,7 @@ img {
     }
 
     button {
-        font-size: clamp(.5rem, 1.5vw, 1.5vw);
+        font-size: clamp(1rem, 1.5vw, 1.5vw);
         padding: .7vw 3vw;
         background-color: $primary-text;
         border-radius: .5vw;
@@ -300,18 +303,18 @@ a {
     }
 
     h1 {
-        font-size: clamp(1rem, 2vw, 2vw);
+        font-size: clamp(1.5rem, 2vw, 2vw);
         color: $secondry-text;
     }
 
     h2 {
-        font-size: clamp(.6rem, 1.6vw, 1.6vw);
+        font-size: clamp(1rem, 1.6vw, 1.6vw);
         font-weight: 500;
         color: $dark-text;
     }
 
     h3 {
-        font-size: clamp(.6rem, 1.6vw, 1.6vw);
+        font-size: clamp(1rem, 1.6vw, 1.6vw);
         font-weight: 500;
         color: $primary-text;
     }
@@ -321,7 +324,7 @@ a {
 
 
 .search-filter {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
     background-color: $white-color;
     box-shadow: 0 0 1.5vw rgba(0, 0, 0, 0.847);
     width: 100%;
@@ -332,6 +335,8 @@ a {
 
     .filter {
         display: none;
+        user-select: none;
+        cursor: pointer;
 
     }
 
@@ -341,7 +346,7 @@ a {
 
     h2 {
 
-        font-size: clamp(.6rem, 1.6vw, 1.6vw);
+        font-size: clamp(1rem, 1.6vw, 1.6vw);
         width: 100%;
         color: $primary-text;
     }
@@ -355,7 +360,7 @@ a {
         }
 
         width: 98%;
-        font-size: clamp(.4rem, 1vw, 1vw);
+        font-size: clamp(1rem, 1vw, 1vw);
         border: none;
         color: $dark-text;
         font-weight: 500;
@@ -487,7 +492,7 @@ a {
     }
 
     h3 {
-        font-size: clamp(.5rem, 1vw, 1vw);
+        font-size: clamp(1rem, 1vw, 1vw);
         color: gray;
         font-weight: 500;
     }
@@ -556,7 +561,7 @@ a {
     width: fit-content;
     background-color: rgba(128, 128, 128, 0.733);
     color: white;
-    font-size: clamp(.3rem, 1vw, 1vw);
+    font-size: clamp(1rem, 1vw, 1vw);
     font-weight: 500;
     padding: 1.5% 3%;
     border-radius: 1vw;
@@ -566,7 +571,7 @@ a {
     width: fit-content;
     background-color: rgb(0, 192, 0);
     color: white;
-    font-size: clamp(.3rem, 1vw, 1vw);
+    font-size: clamp(1rem, 1vw, 1vw);
     font-weight: 500;
     padding: 1.5% 3%;
 }
@@ -578,7 +583,7 @@ a {
     }
 
     h4 {
-        font-size: clamp(.5rem, 1.2vw, 1.2vw);
+        font-size: clamp(1rem, 1.2vw, 1.2vw);
         color: gray;
         font-weight: 500;
 
@@ -589,18 +594,18 @@ a {
 
     h3 {
         color: $primary-text;
-        font-size: clamp(.8rem, 1.5vw, 1.5vw);
+        font-size: clamp(1rem, 1.5vw, 1.5vw);
     }
 
     h2 {
-        font-size: clamp(.7rem, 1.4vw, 1.4vw);
+        font-size: clamp(1rem, 1.4vw, 1.4vw);
         color: black;
     }
 
     p {
-        font-size: clamp(.3rem, 1vw, 1vw);
+        font-size: clamp(.7rem, 1vw, 1vw);
         color: gray;
-        height: 5vw;
+        height: 8vw;
         overflow: auto;
 
         &::-webkit-scrollbar {
@@ -629,7 +634,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
 }
 
 .bedroom {
-    font-size: clamp(.3rem, 1.5vw, 1.5vw);
+    font-size: clamp(1rem, 1.5vw, 1.5vw);
 
     p {
         color: $primary-text;
@@ -654,7 +659,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
 
     button {
         height: fit-content;
-        font-size: clamp(.3rem, 1.5vw, 1.5vw);
+        font-size: clamp(1rem, 1.5vw, 1.5vw);
         background-color: $slider-card-footer-bg;
         padding: 5%;
         margin-left: 15%;
@@ -890,7 +895,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
     place-items: center;
 
     h6 {
-        font-size: clamp(.8rem, 1.5vw, 1.5vw);
+        font-size: clamp(1rem, 1.5vw, 1.5vw);
         color: $primary-text;
         text-decoration: underline;
     }
@@ -1017,7 +1022,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
         position: relative;
 
         cursor: pointer;
-        font-size: clamp(.7rem, 1.4vw, 1.4vw);
+        font-size: clamp(1.3rem, 1.4vw, 1.4vw);
         font-weight: 500;
         margin: 2% 0;
         list-style: none;
@@ -1027,7 +1032,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
         content: "+";
         color: gray;
         position: absolute;
-        font-size: clamp(1rem, 2vw, 2vw);
+        font-size: clamp(1.5rem, 2vw, 2vw);
         line-height: 0;
         top: 2%;
         right: 0;
@@ -1038,7 +1043,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
 
     details[open] summary:after {
         content: '-';
-        font-size: clamp(1rem, 2vw, 2vw);
+        font-size: clamp(1.5rem, 2vw, 2vw);
         color: black;
 
     }
@@ -1048,7 +1053,7 @@ $slider-card-footer-bg: rgba(176, 224, 230, 0.164);
     }
 
     details p {
-        font-size: clamp(.5rem, 1vw, 1vw);
+        font-size: clamp(.9rem, 1vw, 1vw);
         margin: 0 0 1rem;
         padding-top: 1rem;
         color: gray;
@@ -1132,7 +1137,18 @@ footer {
 
 
 }
+.contact-modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -999999;
+    opacity: 0;
+    transition: all .13s ease-in-out;
+    background-color: #00000093;
+    backdrop-filter: blur(3px);
 
+}
 .contact-modal {
     width: 70%;
     position: fixed;
@@ -1148,8 +1164,9 @@ footer {
     background-color: rgba(255, 255, 255, 0.781);
     box-shadow: 0 .5vw 1vw rgba(0, 0, 0, 0.678);
     opacity: 0;
-    transition: all .23s ease-in-out;
+    transition: all .13s ease-in-out;
     max-height: 90%;
+    opacity: 0;
 
     * {
         padding: 2% 4%;
@@ -1191,15 +1208,16 @@ footer {
         font-size: $h1Size;
         text-align: center;
     }
-button{
-    border-radius: 1vw;
-    background-color: #2189fe;
-    padding: 1% 3%;
-    color: white;
-    width: 100%;
-    font-size: clamp(1rem, 1.5vw, 2vw);
 
-}
+    button {
+        border-radius: 1vw;
+        background-color: #2189fe;
+        padding: 1% 3%;
+        color: white;
+        width: 100%;
+        font-size: clamp(1rem, 1.5vw, 2vw);
+
+    }
 }
 
 .closeModal {
@@ -1344,7 +1362,8 @@ button{
 
     .closeMobFilterBackground {
         position: fixed;
-        padding: 150% 0;
+        padding: 190% 0;
+        min-height: 100%;
         width: 100%;
         top: -5%;
         left: 0;
@@ -1375,28 +1394,29 @@ button{
 
         .filter {
             display: block;
-            background-color: $white-color;
+            background-color: black;
             padding: 3%;
-            font-size: clamp(.5rem, 1.3vw, 1.3vw);
-
+            color: white;
             font-size: 2rem;
             position: absolute !important;
             border-radius: $img-border-radius $img-border-radius 0 0;
             top: 50%;
-            transform: translate(-70%, -60%) rotate(-90deg) !important;
+            transform: translate(-75%, -50%) rotate(-90deg) !important;
             left: 0 !important;
 
         }
 
         h2 {
             text-align: center;
+            font-size: clamp(1rem, 2.5vw, 2.5vw);
+
         }
 
         select {
             background: rgba(245, 245, 245, 0.822);
             border-radius: 5px;
             padding: .4rem;
-
+            font-size: clamp(1rem, 2vw, 2vw);
             width: 100%;
 
             &:hover {
@@ -1459,7 +1479,7 @@ button{
         }
     }
 
-   
+
 }
 
 
@@ -1475,6 +1495,7 @@ button{
         height: 100vw !important;
     }
 }
+
 @media screen and (max-width: 575px) {
     .footer-info {
 
@@ -1490,4 +1511,127 @@ button{
         }
 
     }
+}
+
+//  about css /////////////////////////////////////////////////////////////////////////////////////
+
+.about-section{
+    height: 90%;
+    width: 100%;
+    padding: 2% 4%;
+    background-image: url(../images/aboutIMg/navi-photography-hI3xNg_V6DM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.about-blur{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-image: linear-gradient(to top , white 40%, rgba(255, 255, 255, 0.171));
+    backdrop-filter: blur(60px);
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}   
+.about-unblur{
+   width: 75%;
+   height: 68%;
+   background-image: url(../images/aboutIMg/navi-photography-hI3xNg_V6DM-unsplash.jpg);
+   border-bottom-left-radius: 1vw;
+   border-bottom-right-radius: 1vw;
+   background-size: cover;
+   background-position: top;
+   position: relative;
+   display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+}
+.about-profile-img{
+    background-image: url(../images/aboutIMg/me.jpg);
+    padding: 9%;
+    background-size: cover;
+    background-position: center;
+    // width: 10%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    border: .35vw solid white;
+    transform: translateY(80%);
+    
+
+}
+.textABout{
+    width:38%;
+   float: right;
+    h1{
+        color: black;
+        font-size: clamp(2rem , 2.5vw ,2.5vw);
+        font-weight: 600;
+        margin-top: 2%;
+
+    }   
+    h2{
+        color: #77787c;
+        font-size: clamp(1.5rem , 1.5vw ,1.5vw);
+        font-weight: 600;
+        // margin-top: 1%;
+        
+    }
+}
+.about-pl-imgs{
+    margin-top: .7%;
+    width: 80%;
+    img{
+        transition: all 0.3s ease-in-out;
+        width: 10%;
+        border-radius: 50%;
+        margin-right: -2%;
+        border: .35vw solid white;
+        &:hover{
+            filter: brightness(60%);
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-unblur{
+        width: 100%;
+    }
+    .about-blur{
+        background-color: white;
+    }
+    .about-profile-img{
+    position: relative;
+    // transform: translate(-50%, -50%);
+    width: 10%;
+    left: 0;
+    transform: translateY(50%);
+    border: .5rem solid white;
+    
+    }
+    .textABout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 9%;
+    }
+    .about-pl-imgs{
+        margin-top: 1%;
+        max-width: 50%;
+        width: fit-content;
+        min-width: 20rem;
+        display: flex;
+        justify-content: center;
+    }
+
 }

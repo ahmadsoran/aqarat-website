@@ -22,20 +22,24 @@ if (navMenu.classList.contains('openNav')) {
 }
 })
 // -----------------------------------------
-const contactLink = document.querySelectorAll('.contact')
-const modalContact = document.querySelector('.contact-modal')
-const closeModalContact = document.querySelector('.closeModal')
-closeModalContact.addEventListener('click', ()=>{
-  modalContact.classList.remove('show-contact-modal')
-})
-contactLink.forEach((e)=>{
-  e.addEventListener('click' , ()=>{
-   modalContact.classList.toggle('show-contact-modal')
+
+
+  const contactLink = document.querySelectorAll('.contact')
+  const modalContact = document.querySelector('.contact-modal')
+  const closeModalContact = document.querySelector('.closeModal')
+  closeModalContact.addEventListener('click', ()=>{
+    modalContact.classList.remove('show-contact-modal')
   })
-})
+  contactLink.forEach((e)=>{
+    e.addEventListener('click' , ()=>{
+      modalContact.classList.toggle('show-contact-modal')
+    })
+  })
+  
 
+  
+  // ------------------------------------------
 
-// ------------------------------------------
 const showBackFilter = document.querySelector('.closeMobFilterBackground');
 const searchFilter = document.querySelector('.search-filter');
 const filterBtn = document.querySelector('.filter');
